@@ -13,13 +13,14 @@ public class HappyPath {
 
     @Given("^An user is on the QATools page$")
     public void an_user_is_on_the_QATools_page() throws Throwable {
+        Thread.sleep(1000); //this line will be updated in future
         WebElement mainBannerLocator =  driver.findElement(By.className("banner-image"));
         mainBannerLocator.isDisplayed();
     }
 
     @When("^clicks on  BookStoreAplication option$")
     public void clicks_on_BookStoreAplication_option() throws Throwable {
-        WebElement bookStoreLocator = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[6]/div/div[2]/svg/path"));
+        WebElement bookStoreLocator = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/div[6]/div"));
         bookStoreLocator.click();
     }
 
