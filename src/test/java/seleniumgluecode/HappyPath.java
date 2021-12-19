@@ -5,11 +5,11 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HappyPath {
-    private FirefoxDriver driver = Hooks.getDriver();
+    private WebDriver driver = Hooks.getDriver();
 
     @Given("^An user is on the QATools page$")
     public void an_user_is_on_the_QATools_page() throws Throwable {
