@@ -1,10 +1,14 @@
 package pom;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class BookStore extends BasePage{
-    private By mainHeaderLocator = By.className("main-header");
+
+    @FindBy(className = "main-header")
+    private WebElement mainHeaderLocator;
+
     private String titlePage = "Book Store";
 
     public BookStore(WebDriver driver){

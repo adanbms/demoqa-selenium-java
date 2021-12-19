@@ -1,11 +1,15 @@
 package pom;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
-    private By mainBannerLocator =  By.className("banner-image");
-    private By bookStoreLocator = By.xpath("/html/body/div[2]/div/div/div[2]/div/div[6]/div");
+    @FindBy(className = "banner-image")
+    private WebElement mainBannerLocator;
+
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div[6]/div")
+    private WebElement bookStoreLocator;
 
     public HomePage(WebDriver driver){
         super(driver);
