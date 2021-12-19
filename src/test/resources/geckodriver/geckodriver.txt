@@ -1,0 +1,2 @@
+#Import in this folder your geckodriver.exe
+#The configuration to use this WebDriver is in "./src/test/java/runner/abstract_factory/FirefoxDriverManager.java"

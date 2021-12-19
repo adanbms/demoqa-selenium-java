@@ -18,9 +18,5 @@ target/
 chromedriver.exe
 geckodriver.exe
 
-#WebDriver Linux
-chromedriver
-geckodriver
-
 # Mongo
 src/test/resources/config.properties
